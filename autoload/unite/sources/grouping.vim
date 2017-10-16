@@ -1,7 +1,7 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
-call unite#util#set_default('g:unite_source_grouping_ignore_pattern', '\(.xls$\|.xlsm$\|.xlsx$\|.class$\|.zip$\|.jpeg$\|.jpg$\|.gif$\|.png$\|.pdf$\|.db$\)')
+call unite#util#set_default('g:unite_source_grouping_ignore_pattern', '\(.pyc$\|.xls$\|.xlsm$\|.xlsx$\|.class$\|.zip$\|.jpeg$\|.jpg$\|.gif$\|.png$\|.pdf$\|.db$\)')
 "
 let s:source = {}
 
