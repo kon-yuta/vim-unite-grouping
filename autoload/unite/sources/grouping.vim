@@ -44,8 +44,8 @@ function! s:create_sources(paths)
     endif
 
     call add(list , {
-            \ "abbr" : substitute(f.path , root . f.info.path . '/' , '' , ''),
-            \ "word" : substitute(f.path , root . f.info.path . '/' , '' , ''),
+            \ "abbr" : substitute(f.path , root , '' , ''),
+            \ "word" : substitute(f.path , root , '' , ''),
             \ "kind" : "file" ,
             \ "action__path"      : f.path ,
             \ "action__directory" : fnamemodify(f.path , ':p:h:h') ,
